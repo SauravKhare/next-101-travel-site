@@ -5,7 +5,7 @@ import FeatureItem from "./FeatureItem";
 const Features = () => {
   return (
     <section className="flex-col flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24">
-      <div className="mx-container padding-container relative w-full justify-end">
+      <div className="flex mx-container padding-container relative w-full justify-end">
         <div className="flex flex-1 lg:min-h-[900px]">
           <Image
             src="/phone.png"
@@ -26,13 +26,12 @@ const Features = () => {
             />
             <h2 className="bold-40 lg:bold-64">Our Features</h2>
           </div>
-          <ul>
+          <ul className="mt-10 grid gap-10 md:grid-col-2 lg:mt-20 lg:gap-20">
             {FEATURES.map((feature) => (
               <FeatureItem
                 key={feature.title}
                 title={feature.title}
                 icon={feature.icon}
-                variant={feature.variant}
                 description={feature.description}
               />
             ))}
