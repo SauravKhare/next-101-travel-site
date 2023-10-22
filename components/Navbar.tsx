@@ -19,6 +19,7 @@ const Navbar = () => {
             {link.label}
           </Link>
         ))}
+      </ul>
         <div className="lg:flexCenter hidden">
           <Button
             type="button"
@@ -27,7 +28,6 @@ const Navbar = () => {
             variant="btn_dark_green"
           />
         </div>
-      </ul>
       <Image
         src="menu.svg"
         alt="menu"

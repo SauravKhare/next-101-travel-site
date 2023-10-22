@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row">
       <div className="hero-map" />
-      <div className="relative z-20 flex flex-col xl:w-1/2">
+      <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
         <Image
           src="/camp.svg"
           alt="camp"
@@ -34,7 +34,7 @@ const Hero = () => {
               ))}
           </div>
           <p className="bold-16 lg:bold-20 text-blue-70">
-            193K
+            198K
             <span className="regulat-16 lg:regular-20 ml-1">
               Excellent Reviews
             </span>
@@ -44,7 +44,7 @@ const Hero = () => {
           <Button type="button" title="Download App" variant="btn_green" />
           <Button
             type="button"
-            title="How we work"
+            title="How we work?"
             variant="btn_white_text"
             icon="/play.svg"
           />
